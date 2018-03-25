@@ -1,0 +1,67 @@
+.counter-section {
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  position: relative;
+  z-index: 0;
+  color: #fff;
+
+  .title {
+    color: #fff;
+  }
+
+  .subtitle {
+
+  }
+
+  .container {
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .counters-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .counter-section_item {
+    padding: 30px 15px;
+
+    @media (min-width: $screen-sm) {
+      width: calc(100% / 3);
+    }
+  }
+
+  .counter-value {
+    font-size: 3rem;
+    font-weight: bold;
+
+    @media (min-width: $screen-md) {
+      font-size: 4.2rem;
+    }
+  }
+
+  .counter-text {
+    font-size: 1.6rem;
+
+    @media (min-width: $screen-md) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
